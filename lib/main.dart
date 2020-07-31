@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: ImagePickerView(),
-      // initialRoute: Routes.startupViewRoute,
+      //home: ImagePickerView(),
+      initialRoute: Routes.startupViewRoute,
       onGenerateRoute: Router().onGenerateRoute,
       navigatorKey: locator<NavigationService>().navigatorKey,
     );

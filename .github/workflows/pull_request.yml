@@ -19,7 +19,7 @@ jobs:
           channel: "stable"
       - run: flutter pub get
       # - run: flutter analyze
-      # - run: flutter test --coverage
+      - run: flutter test --coverage
       - name: lcov-cop
         uses: ChicagoFlutter/lcov-cop@v1.0.2
         with:

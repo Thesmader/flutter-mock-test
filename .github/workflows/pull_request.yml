@@ -23,7 +23,7 @@ jobs:
       - name: lcov-cop
         uses: ChicagoFlutter/lcov-cop@v1.0.2
         with:
-          minimum_coverage: 0
+          min_coverage: 0
           exclude: "**/app/*"
 
       - uses: codecov/codecov-action@v1.0.12

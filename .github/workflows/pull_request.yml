@@ -19,7 +19,12 @@ jobs:
           channel: "stable"
       - run: flutter pub get
       # - run: flutter analyze
-      - run: flutter test --coverage
+      # - run: flutter test --coverage
+      - name: lcov-cop
+        uses: ChicagoFlutter/lcov-cop@v1.0.2
+        with:
+          exclude: "**/app/*"
+
       - uses: codecov/codecov-action@v1.0.12
         with:
           token: ${{secrets.CODECOV_TOKEN}}
